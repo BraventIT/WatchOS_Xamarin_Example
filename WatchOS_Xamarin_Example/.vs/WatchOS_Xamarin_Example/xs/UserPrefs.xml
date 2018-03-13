@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{7D6FE18C-ABBD-4A0A-AE53-E7E1219826C2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WatchOS_Xamarin_Example.On_WatchExtension/ToiPhoneController.cs">
+    <Files>
+      <File FileName="ViewController.cs" Line="27" Column="17" />
+      <File FileName="WatchOS_Xamarin_Example.On_WatchExtension/WCSessionManager.cs" Line="4" Column="24" />
+      <File FileName="WatchOS_Xamarin_Example.On_WatchExtension/ToiPhoneController.cs" Line="39" Column="13" />
+      <File FileName="WatchOS_Xamarin_Example.On_WatchExtension/ExtensionDelegate.cs" Line="15" Column="25" />
+      <File FileName="AppDelegate.cs" Line="24" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/danielcardena/Documents/proyectos/Bravent_GitHub/WatchOS_Xamarin_Example/WatchOS_Xamarin_Example/ViewController.cs" relfile="ViewController.cs" line="33" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WatchOS__Xamarin__Example.On__WatchExtension>
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.WatchOS__Xamarin__Example.On__WatchExtension>
+  <MonoDevelop.Ide.ItemProperties.WatchOS__Xamarin__Example PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7D0D1F4E-484E-4D17-BCCD-6D2564C4028F">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.WatchOS__Xamarin__Example>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WatchOS__Xamarin__Example.On__Watch PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0A36322C-4A15-448A-A978-89FD09EE7F53">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.WatchOS__Xamarin__Example.On__Watch>
+</Properties>

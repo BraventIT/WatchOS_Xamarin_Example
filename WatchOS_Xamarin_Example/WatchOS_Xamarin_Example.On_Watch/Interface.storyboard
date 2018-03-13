@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Hello Word!-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" title="Hello Word!" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" height="30" alignment="left" text="Hello Word!" textAlignment="center" numberOfLines="0" id="F9E-bY-wG0"/>
+                        <button width="136" alignment="left" title="Touch Me!" id="pKq-IS-B7O">
+                            <color key="backgroundColor" red="1" green="0.14964497382822239" blue="0.10533820475580935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="Btn_TouchMe_TouchUpInside" destination="AgC-eL-Hgc" id="fNb-47-ydv"/>
+                            </connections>
+                        </button>
+                        <separator width="1" alignment="left" id="pEC-Ci-a6m"/>
+                        <group width="1" height="70" alignment="center" verticalAlignment="center" id="0U1-K0-Ku7">
+                            <items>
+                                <button width="65" height="1" alignment="left" title="Modal" id="vTv-CI-iEl">
+                                    <connections>
+                                        <segue destination="Z1t-Z7-GmL" kind="modal" id="DJo-RW-z4c"/>
+                                    </connections>
+                                </button>
+                                <button width="65" height="1" alignment="right" title="Navigation" id="hQc-gk-zjf">
+                                    <color key="backgroundColor" red="0.57223897012951441" green="0.66513487759421097" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <segue destination="KpL-a5-jdB" kind="push" id="OoM-xu-XS8"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="Btn_TouchMe" destination="pKq-IS-B7O" id="B5c-76-4Wd"/>
+                        <outlet property="lbl_Hello" destination="F9E-bY-wG0" id="2uf-o1-q4v"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-167" y="0.0"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="WdD-W1-IHh">
+            <objects>
+                <controller title="Navigation" id="KpL-a5-jdB" customClass="WatchNavigationController">
+                    <items>
+                        <table alignment="left" id="uFN-P5-kY9">
+                            <items>
+                                <tableRow identifier="OptionRow" id="UxU-B9-8Wx" customClass="OptionRow">
+                                    <group key="rootItem" width="1" alignment="left" id="EDY-7m-nxm">
+                                        <items>
+                                            <label width="127" height="46" alignment="left" text="Label" textAlignment="center" id="Gca-bN-6Ja"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lbl_Row" destination="Gca-bN-6Ja" id="name-outlet-Gca-bN-6Ja"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableOptions" destination="uFN-P5-kY9" id="b8v-6N-mim"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="254" y="0.0"/>
+        </scene>
+        <!--WatchImagenViewController-->
+        <scene sceneID="FOh-uv-6sE">
+            <objects>
+                <controller identifier="WatchImagenViewController" id="o3N-y9-VCn" customClass="WatchImagenViewController">
+                    <items>
+                        <imageView width="136" height="150" alignment="left" image="BackImage" contentMode="scaleAspectFit" id="KDh-32-CDN"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgBack" destination="KDh-32-CDN" id="R8E-Ir-H7m"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="523" y="0.0"/>
+        </scene>
+        <!--Switch-->
+        <scene sceneID="2b1-Fp-9dX">
+            <objects>
+                <controller identifier="SwitchInterfaceController" title="Switch" id="SXC-BJ-8nG" customClass="SwitchInterfaceController">
+                    <items>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="NGA-bK-cQc"/>
+                        <separator alignment="left" id="zaX-7k-36a"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="dQH-P6-Lyo"/>
+                    </items>
+                    <connections>
+                        <outlet property="Slider" destination="dQH-P6-Lyo" id="dKd-Z7-WBz"/>
+                        <outlet property="Switch" destination="NGA-bK-cQc" id="1MW-t1-NRO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="523" y="261"/>
+        </scene>
+        <!--MapInterfaceController-->
+        <scene sceneID="rEa-h6-pfD">
+            <objects>
+                <controller identifier="MapInterfaceController" id="yw0-s5-krI" customClass="MapInterfaceController">
+                    <items>
+                        <map height="151" alignment="left" id="evi-v6-WOk"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="evi-v6-WOk" id="K7Z-Ik-Nhb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="523" y="516"/>
+        </scene>
+        <!--To iPhone-->
+        <scene sceneID="NMK-te-foC">
+            <objects>
+                <controller identifier="ToIphoneController" title="To iPhone" id="2ul-cn-OPu" customClass="ToiPhoneController">
+                    <items>
+                        <label width="134" alignment="left" text="Label" textAlignment="center" id="kVV-18-XCA"/>
+                        <slider width="1" alignment="left" maximum="30" steps="30" id="HmP-5v-V12">
+                            <connections>
+                                <action selector="SliderChange:" destination="2ul-cn-OPu" id="MH2-o0-1vd"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Enviar" id="rQ9-U5-dsL">
+                            <connections>
+                                <action selector="buttonSendTouch" destination="2ul-cn-OPu" id="ZmK-sB-gMU"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="38" alignment="left" text="iPhone dice" textAlignment="center" id="rSZ-Xf-2gZ"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="rSZ-Xf-2gZ" id="bNg-ue-6Y2"/>
+                        <outlet property="lblCount" destination="kVV-18-XCA" id="hz6-ao-zgH"/>
+                        <outlet property="sliderCount" destination="HmP-5v-V12" id="yCq-oM-SGf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="523" y="781"/>
+        </scene>
+        <!--Modal-->
+        <scene sceneID="50U-X8-eB4">
+            <objects>
+                <controller title="Modal" id="Z1t-Z7-GmL" customClass="WatchModalController">
+                    <items>
+                        <label width="136" height="32" alignment="left" text="Modal View" textAlignment="center" id="fYd-XC-PzZ"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Back" id="F4s-m8-SMv">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backTouch" destination="Z1t-Z7-GmL" id="5vm-mk-Nw8"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-167" y="358"/>
+        </scene>
+    </scenes>
+</document>
